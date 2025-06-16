@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.game-container {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.game-info {
+  margin-bottom: 30px;
+  color: #666;
+  font-size: 14px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* .btn:hover {
+  background-color: #0056b3;
+} */
+
+/* .btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+} */
+
+.reset-btn {
+  background-color: #28a745;
+}
+
+/* .reset-btn:hover {
+  background-color: #1e7e34;
+} */
+
+.feedback {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.feedback.high {
+  color: #721c24;
+}
+
+.feedback.low {
+  color: #0c5460;
+} 
+
+.feedback.correct {
+  color: #155724;
+}
+
+.feedback.game-over {
+  color: #721c24;
+}
+
+.attempts {
+  color: #666;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.hidden {
+  display: none;
+}
