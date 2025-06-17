@@ -9,6 +9,12 @@ let attemptsDisplay = document.getElementById('attempts');
 
 submitBtn.addEventListener('click',() => {
     let userGuess = parseInt(guessInput.value);
+    if(isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+        feedback.innerHTML = `Please enter a valid number between 1 and 100.`;
+        feedback.style.display = 'block';
+        feedback.className = 'feedback error';
+        return;
+    }
     attempts++;
     attemptsDisplay.innerHTML = `Attempts: ${attempts}`;
     if(userGuess === randomNumber) {
